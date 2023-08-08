@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lugrasimo', cursive;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* vh */
+    position: relative;
+    background-color:aliceblue;
+    
+}
+ .navbar {
+    display: flex;  /*side by side */
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;
+ }
+ .logo
+ {
+    width: 130px;
+ }
+ .listitem{
+    display: inline-block;
+    margin: 10px 20px;
+ }
+ .link{
+   text-decoration: none;
+   /* unmark line from link */
+   color: black;
+   font-weight: bold;
+ }
+ .link:hover{
+   color: rgb(170, 29, 13);
+ }
+ .title{
+   margin-left: 8%;
+   margin-top: 13%;
+ }
+.title_h1{
+   font-size: 40px;
+}
+#h1-color{
+   color: orange;
+}
+.download{
+   background-color: black;
+   text-decoration: none;
+   font-weight: bold;
+   color: aliceblue;
+   padding: 10px;
+   border-radius: 5px;
+
+}
+.images{
+   position: absolute;
+   width: 45%;
+   height: 80%;
+   bottom: 0px;
+   right: 30px;
+}
+.images img{
+   position: absolute;
+   height: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   transition: bottom 2s,left 2s;
+}
+.images:hover #shape{
+   bottom: 70px;
+}
+.images:hover #girl{
+   left: 40%;
+}
+/* section-about */
+#about{
+   margin: 20% 8% 0px 8%;
+   /* margin-setting */
+
+}
+.heading{
+   text-align: center;
+}
+.heading h2{
+   font-size: 30px;
+   font-weight: bold;
+}
+.heading span{
+   font-size: 20px;
+   color: green;
+}
+.about-content{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   margin-top: 30px;
+   gap: 4rem;
+}
+.about-image img{
+   width: 80%;
+   border-radius: 1rem;
+}
+.information{
+   margin-top: 2rem;
+}
+.info-box{
+   margin-bottom: 1rem;
+}
+.about-details{
+   font-size: 20px;
+   text-align: justify;
+}
+.info-box span{
+   margin-left: 10px;
+}
+/* skills */
+#skills{
+   margin: 8% 8% 0px 8%;
+}
+.skill-container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 2rem;
+   margin-top: 2rem;
+}
+.skill-image img{
+  width: 90%;
+  padding-left: 4rem;
+}
+.bar-container{
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem 0px;
+   margin-bottom: 1rem;
+   position: relative;
+}
+.base-bar{
+  
+   width: 100%;
+   height: 0.5rem;
+   background-color: black;
+   border-radius: 5px;
+   position: absolute;
+   bottom: 0px; 
+}
+.html-bar{
+   background-color: rgb(248, 238, 54);
+   width: 95%;
+}
+.css-bar{
+   background-color: rgb(248, 238, 54);
+   width: 88%;
+}
+
+.js-bar{
+   background-color: rgb(248, 238, 54);
+   width: 89%;
+}
+
+.react-bar{
+   background-color: rgb(248, 238, 54);
+   width: 85%;
+}
+
+.icon-set{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 3%;
+}
+.icon,.up-arrow{
+   width: 50px;
+   height: 50px;
+   /* border: 1px solid; */
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   margin: 0px 10px;
+}
+
+.icon i{
+   font-size: 30px;
+   color: black;
+}
+.icon:hover{
+   background-image: linear-gradient(to left top ,rgb(248, 238, 54),red);
+}
+.icon:hover i{
+   color: white;
+   animation: shake 0.75s infinite;
+}
+@keyframes shake{
+   /* 0% {top:0px }
+   25%{top: 100px;}
+   50%{top: 0px;}
+   75%{top:100px;}
+   100%{top: 0px;} */
+10%{
+   transform: rotate(15deg);
+}
+20%{
+   transform: rotate(-15deg);
+}
+30%{
+   transform: rotate(15deg);
+}
+40%{
+   transform: rotate(-15deg);
+}
+
+}
+footer{
+   margin: 3rem 0px;
+   text-align: center;
+}
+.up-arrow{
+   float: right;
+   margin: 0px 10px 50px 10px;
+   width: 50px;
+   height: 50px;
+   /* border: 1px solid; */
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   /* margin: 0px 10px; */
+}
+
+
+
